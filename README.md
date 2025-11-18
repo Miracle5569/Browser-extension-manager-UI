@@ -1,25 +1,52 @@
-# .
+# Название проекта
 
-This template should help get you started developing with Vue 3 in Vite.
+Browser extension manager UI
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## О проекте 📝
 
-## Recommended Browser Setup
+Этот проект — **учебный макет от [Frontend Mentor](https://www.frontendmentor.io)**. Целью была отработка навыков верстки и JavaScript. Макет был сверстан для десктопной и мобильной версий.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Задача:** Реализовать макет с сопутствующим для него функционалом.
+- **Моя роль:** Frontend-разработчик (верстка, логика на JS).
+- **Статус:** В процессе.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Демо 🚀
 
-## Project Setup
+Пока отсутствует.
+
+---
+
+## Технологии 💻
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Vie**
+- **Vite**
+- **Sass**
+- **Pinia**
+
+---
+
+## Скриншоты 📸
+
+Пока отсутствуют
+
+---
+
+## Авторское право и благодарность 🙏
+
+- Этот challenge был взят с платформы [Frontend Mentor](https://www.frontendmentor.io).
+- Все материалы (макеты, изображения, шрифты) предоставлены Frontend Mentor.
+- Моя работа — это реализация макета с помощью кода.
+
+---
+
+## Установка и запуск 🛠
 
 ```sh
 npm install
