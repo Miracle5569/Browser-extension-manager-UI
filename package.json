@@ -16,7 +16,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@a1rth/css-normalize": "^1.2.4",
     "pinia": "^3.0.3",
+    "sass": "^1.94.1",
     "vue": "^3.5.22"
   },
   "devDependencies": {

@@ -1,0 +1,81 @@
+@use '@a1rth/css-normalize';
+@use 'sass:math';
+
+// Шрифт
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/NotoSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/NotoSans-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/NotoSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Mixins --------------------------------------------
+
+// Функции ------------------------------------------
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  } @else {
+    @error 'Не используйте единицы измерения при работе с функцией rem()! Передавайте аргументом только числа.';
+  }
+}
+
+// Переменные -----------------------------------------------
+:root {
+  --mobile-width: #{rem(375)};
+  --desctop-width: #{rem(1440)};
+
+  --Neutral-900: hsl(227, 75%, 14%);
+  --Neutral-800: hsl(226, 25%, 17%);
+  --Neutral-700: hsl(225, 23%, 24%);
+  --Neutral-600: hsl(226, 11%, 37%);
+  --Neutral-300: hsl(0, 0%, 78%);
+  --Neutral-200: hsl(217, 61%, 90%);
+  --Neutral-100: hsl(0, 0%, 93%);
+  --Neutral-0: hsl(200, 60%, 99%);
+
+  --Red-400: hsl(3, 86%, 64%);
+  --Red-500: hsl(3, 71%, 56%);
+  --Red-700: hsl(3, 77%, 44%);
+
+  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --font-size-paragraph: #{rem(16)};
+  --font-family: 'Noto Sans', sans-serif;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+}
+
+// Утилитарные классы -------------------------------------
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+* {
+  p {
+    font-size: var(--font-size-paragraph);
+  }
+
+  font-family: var(--font-family);
+}
