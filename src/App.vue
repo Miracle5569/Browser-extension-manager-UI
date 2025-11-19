@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import BrowserHeader from './components/BrowserHeader.vue'
+</script>
 
 <template>
-  <div>Test</div>
+  <BrowserHeader />
+  <main></main>
 </template>
 
 <style scoped></style>
