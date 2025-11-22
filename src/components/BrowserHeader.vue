@@ -8,20 +8,12 @@
           <img src="../assets/images/logo-white.svg" alt="Logo" loading="lazy" />
         </a>
 
-        <!-- Взять стили как основу для кнопки -->
-        <button style="position: relative; width: 100px; height: 200px">
+        <button class="header__extentions-change-theme">
           <img
             src="../assets/images/icon-sun.svg"
-            alt=""
-            style="
-              background-color: black;
-              position: absolute;
-              width: 100px;
-              height: 100%;
-              object-fit: fill;
-              top: 0;
-              left: 0;
-            "
+            alt="Light theme"
+            loading="lazy"
+            class="header__extentions-icon-theme"
           />
         </button>
       </div>
@@ -29,4 +21,29 @@
   </header>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use '../assets/style/core' as core;
+
+.header__extentions {
+  padding-top: #{core.rem(40)};
+
+  &-inner {
+    @include core.flex-jst-center;
+    padding: #{core.rem(10)} #{core.rem(20)};
+    border-radius: #{core.rem(20)};
+    background-color: var(--Neutral-800);
+  }
+
+  &-change-theme {
+    width: #{core.rem(50)};
+    height: #{core.rem(50)};
+    outline: none;
+    border: none;
+    background-color: var(--Neutral-700);
+    border-radius: #{core.rem(10)};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+</style>

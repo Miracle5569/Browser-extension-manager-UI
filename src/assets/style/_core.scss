@@ -27,6 +27,12 @@
 }
 
 // Mixins --------------------------------------------
+//NOTE Выравнивание по центру и распределение элементов по бокам
+@mixin flex-jst-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // Функции ------------------------------------------
 @function rem($pixel) {
@@ -63,6 +69,8 @@
 
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(16)};
+
+  --test-border: #{rem(1)} solid red;
 }
 
 // Утилитарные классы -------------------------------------
@@ -82,6 +90,7 @@
 html {
   // В нормалайзе используется stable(пока что сделаем авто)
   scrollbar-gutter: auto;
+  color: var(--Neutral-0);
 }
 
 body {
