@@ -23,11 +23,10 @@ Browser extension manager UI
 ## Технологии 💻
 
 - **HTML5**
-- **CSS3**
+- **CSS(SCSS)**
 - **JavaScript**
-- **Vie**
+- **Vue**
 - **Vite**
-- **Sass**
 - **Pinia**
 
 ---
